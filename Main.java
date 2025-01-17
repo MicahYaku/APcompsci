@@ -1,23 +1,23 @@
-package Comclass;
 import java.util.Scanner;
-
 public class Main 
 {
     public static void main(String[] args)
     {
-    Player player01 = new Player();
+    
+    Player p1 = new Player();
     
     Scanner scan = new Scanner(System.in);
     String numAct = scan.nextLine();
 
-        if (numAct.substring(0,2).equals(01))
+        if (numAct.substring(0,2).equals("01") && numAct.substring(numAct.length()-1).equals("b"))
         {
-            if(numAct.substring(numAct.length()-1).equals("b"))
-            {
-                Player.setB(1);
-            }
-    }
+            p1.setB(1);
+        }
 
+    }
+}
+
+/*
     public class Player 
     {
         
@@ -40,5 +40,4 @@ public class Main
         {
             blocks =+ aBlocks;
         }
-    
-}
+*/    
